@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.map {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+.SearchBar {
+    z-index: 3;
+    width: 50vw;
+    height: 3em;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888;
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.SearchBar form {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 0;
+    background-color: #f5f5f5;
+}
+
+.SearchBar form input {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.SearchBar form input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.SearchBar form input:-moz-placeholder {
+    text-align: center;
+}
+
+.SearchBar form input::-moz-placeholder {
+    text-align: center;
+}
+
+.SearchBar form input:-ms-input-placeholder {
+    text-align: center;
+}
+
+.stationShowcase-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.stationShowcase {
+    width: 60%;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    height: 2.5em;
+    line-height: 2.5em;
+    margin: 0.5em auto 0 auto;
+    padding: 0;
+    border: 2px solid #f5f5f5;
+    transition: .1s ease-in-out;
+    box-shadow: 5px 5px 5px #888;
+}
+
+.stationShowcase:hover {
+    cursor: pointer;
+    border: 2px solid #0060df;
+    font-size: 1.1em;
+}
+
+.stationShowcase p {
+    margin: 0 10px;
+    padding: 0;
+    display: inline-block;
+}
+
+.searchResult-Container {
+    width: 100%;
+    height: 100%;
+}
+
+.disabled {
+    display: none;
+    opacity: 0;
+}
+
+.stationInfoContainer {
+    position: absolute;
+    display: block;
+    width: 60vw;
+    height: 10em;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888;
+    margin-bottom: 10em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+}
+.stationInfo {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.stationInfo h3 {
+    font-weight: lighter;
+    font-size: 4em;
+    padding: 0;
+    margin: 0 0 0 1em;
+    line-height: 2.5em;
+}
+
+
+.divider {
+    position: relative;
+    height: 80%;
+    width: 5px;
+    background-color: #aaa;
+    border-radius: 5px;
+    margin: auto 0 auto 2em;
+    padding: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    align-self: center;
+}
+
+.tilgjengelig {
+    position: relative;
+    margin: 0 0 0 1em;
+    display: flex;
+    align-items: center;
+}
+
+.tilgjengelig img {
+    width: 50px;
+    padding: 0;
+}
+
+.tilgjengelig p {
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding: 0;
+}
+
+.close {
+    position: absolute;
+    right: 0.075em;
+    font-size: 5em;
+    color: #999;
+    margin: 0;
+    padding: 0;
+    line-height: 0.75em;
+    transition: 0.1s ease-in-out;
+}
+
+.close:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.close:after {
+    display: inline-block;
+    content: "\00d7";
+}
